@@ -1,0 +1,761 @@
+body {
+    background: url('../img/nav-bg.png') repeat fixed;
+    font-family: 'Roboto';
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+a img {
+    border: none;
+}
+
+#admin-footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    color: #FFF;
+    background: #0094FF;
+    padding: 3px;
+    box-shadow: 0 0 5px 5px #000;
+}
+
+#admin-head{
+    position: fixed;
+    background: #0094FF;
+    top: 0;
+    width: 100%;
+    height: 25px;
+    box-shadow: 0 0 5px 5px #000;
+}
+
+
+@media screen and (min-width: 900px){
+#admin-head {
+    padding-left: 0;
+}
+
+#admin-desktop .admin-head-left ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+#admin-desktop > .admin-head-right > ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+#admin-desktop > .admin-head-left > ul > li.dropdown > a:hover {
+    background: none;
+}
+#admin-desktop > .admin-head-left ul li a{
+    text-decoration: none;
+    color: #FFF;
+    padding: 10px;
+    font-size: 16px;
+}
+
+#admin-desktop .admin-head-left > ul > li{
+    float: left;
+    padding: 5px;
+    transition: .25s background ease-in-out;
+    border-radius: 10px;
+    margin-left: 5px;
+}
+
+#admin-desktop .admin-head-left > ul > li:hover{
+    background: #00137F;
+}
+
+#admin-desktop .admin-head-left > ul > li.dropdown {
+    float: left;
+    padding: 5px;
+    transition: .25s background ease-in-out;
+    border-radius: 10px 10px 0px 0px;
+    margin-left: 5px;
+}
+
+.admin-head-right {
+    color: #FFF;
+    float: right;
+    vertical-align: middle;
+}
+
+.admin-head-right ul li {
+    padding: 3px;
+    padding-right: 7px;
+}
+
+.admin-head-right ul li ul{
+    display: none;
+}
+
+.admin-head-right ul li > a{
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.admin-head-right ul li:hover {
+    background: #00137F;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.admin-head-right ul li:hover ul{
+    display: block;
+    position: absolute;
+    background: #00137F;
+    width: 238px;
+    padding: 10px;
+    transition: background .25s ease-in-out;
+    clear: both;
+    top: 30px;
+    right: 3px;
+    margin: 0;
+    list-style: none;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.admin-head-right ul li ul a{
+    color: #FFF;
+    font-size: 15px;
+    text-decoration: none;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.admin-head-right ul li ul li{
+    padding: 5px;
+}
+
+.admin-head-right ul li ul a:hover{
+    background: #0094FF;
+    border-radius: 10px;
+    width: 100%;
+}
+
+#admin-mobile {
+    display: none;
+}
+}
+
+@media screen and (max-width: 899px){
+    #admin-desktop{
+        display: none;
+    }
+
+    #admin-menuopen{
+        background: none;
+        border: none;
+        color: #FFF;
+        font-size: 18px;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    #admin-menuopen:active{
+        background: #FFF;
+        color: #000;
+    }
+
+    #admin-useropen{
+        background: none;
+        border: none;
+        color: #FFF;
+        font-size: 18px;
+        padding: 8px;
+        border-radius: 10px;
+    }
+
+    #admin-useropen:active{
+        background: #FFF;
+        color: #000;
+    }
+
+    .admin-head-left {
+        float: left;
+    }
+
+    .admin-head-right {
+        float: right;
+    }
+
+    .admin-head-right img{
+        border-radius: 100%;
+    }
+}
+
+#admin-content{
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    background: #FFF;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px #000;
+}
+
+
+.admin-title{
+    font-family: 'Days One';
+    font-size: 25px;
+    text-align: center;
+    width: 100%;
+    background: #0094FF;
+    color: #FFF;
+    margin-left: -10px;
+    margin-top: -10px;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 10px 10px 0px 0px;
+    cursor: default;
+}
+
+.admin-dash-title{
+    font-family: 'Days One';
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 5px;
+    border-bottom: 2px solid #00137F;
+    width: 100%;
+    color: #00137F;
+}
+
+@media screen and (max-width: 899px){
+    #admin-area{
+        margin-top: 70px;
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (min-width: 900px){
+#admin-area{
+    margin-top: 65px;
+    margin-bottom: 46px;
+}
+}
+
+#admin-table{
+    width: 100%;
+}
+
+#admin-table td {
+    width: 15%;
+    padding-bottom: 15px;
+}
+
+#admin-table thead, .admin-mobile-header {
+    font-size: 20px;
+    font-family: 'Days One';
+    cursor: default;
+}
+
+#admin-table tbody{
+    cursor: default;
+}
+
+#admin-mobile-area {
+    position: fixed;
+    width: 285px;
+    height: 100%;
+    left: -305px;
+    top: 0;
+    padding: 5px;
+    background: #00137F;
+    z-index: 3;
+    box-shadow: 0 0 20px #000;
+}
+
+#admin-mobile-area ul > li > ul {
+  display: none;
+}
+
+#admin-user-area {
+    position: fixed;
+    width: 250px;
+    height: 100%;
+    right: -270px;
+    top: 0;
+    padding: 5px;
+    background: #00137F;
+    z-index: 3;
+    box-shadow: 0 0 20px #000;
+}
+
+.admin-choice {
+    margin-bottom: 15px;
+}
+
+.admin-choice a {
+    color: #00137F;
+    border: 2px solid #00137F;
+    border-radius: 10px;
+    padding: 5px;
+    text-decoration: none;
+    transition: .5s background ease-in-out, .5s color ease-in-out;
+    margin-right: 5px;
+}
+
+.admin-choice a:hover{
+    background: #00137F;
+    color: #FFF;
+}
+
+.admin-link {
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.admin-link a {
+    color: #00137F;
+    border: 2px solid #00137F;
+    border-radius: 10px;
+    padding: 5px;
+    text-decoration: none;
+    transition: .5s background ease-in-out, .5s color ease-in-out;
+    margin-right: 5px;
+    width: 100%;
+}
+
+.admin-link a:hover{
+    background: #00137F;
+    color: #FFF;
+}
+
+.admin-form-label {
+    width: 15%;
+    cursor: default;
+}
+
+.admin-form-input {
+    width: 85%;
+}
+
+.admin-form-full {
+    width: 100%;
+    font-size: 20px;
+}
+
+.admin-form-text {
+    width: calc(100% - 10px);
+    padding: 5px;
+    font-family: 'Roboto';
+    border-radius: 10px;
+    border: 1.5px solid #000;
+}
+
+.admin-form-textbox {
+    width: calc(100% - 10px);
+    padding: 5px;
+    font-family: 'Roboto';
+    border-radius: 10px;
+    border: 1.5px solid #000;
+    resize: none;
+    height: 100px;
+}
+
+.admin-form-select{
+    width: 100%;
+    padding: 5px;
+    font-family: 'Roboto';
+    border-radius: 10px;
+    border: 1.5px solid #000;
+}
+
+.admin-form-heading{
+    text-align: center;
+    width: 100%;
+    font-family: 'Days One';
+}
+
+.admin-form-required{
+    color: red;
+}
+
+.admin-form-submit {
+    font-size: 16px;
+    font-family: 'Roboto';
+    background: none;
+    border: 2px solid #00137F;
+    border-radius: 10px;
+    padding: 5px;
+    color: #00137F;
+    transition: background .5s ease-in-out, color .5s ease-in-out;
+    cursor: pointer;
+}
+
+.admin-form-content{
+    width: calc(100% - 10px);
+    font-family: 'Roboto';
+    padding: 5px;
+    height: 400px;
+    resize: none;
+    border-radius: 10px;
+    border: 1px solid #00137F;
+}
+
+.admin-form-submit:hover{
+    background: #00137F;
+    color: #fff;
+}
+
+.admin-footer-link {
+    color: #FFF;
+    text-decoration: none;
+}
+
+.admin-footer-link:hover {
+    text-decoration: underline;
+}
+
+.fa-twitter {
+    color: #55acee;
+}
+
+.fa-facebook-official {
+    color: #3b5998;
+}
+
+.fa-twitch {
+    color: #6441A5;
+}
+
+.fa-youtube-play {
+  color: #cd201f;
+}
+
+.fa-twitch {
+  color: #6441A5;
+}
+
+@media screen and (min-width: 900px){
+    .admin-form-desktop {
+        display: box;
+    }
+
+    .admin-form-mobile {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 899px){
+    .admin-form-desktop {
+        display: none;
+    }
+
+    .admin-form-mobile {
+        display: box;
+    }
+}
+
+.admin-list-area{
+    width: 100%;
+}
+
+@media screen and (min-width: 900px){
+    .admin-list-desktop {
+        display: box;
+    }
+
+    .admin-list-mobile {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 899px){
+    .admin-list-desktop {
+        display: none;
+    }
+
+    .admin-list-mobile {
+        display: box;
+    }
+}
+
+.admin-mobile-title {
+    font-family: 'Days One';
+    color:  #FFF;
+    text-align: center;
+    font-size: 20px;
+}
+
+.admin-mobile-menu {
+    overflow: auto;
+}
+
+.admin-mobile-menu ul {
+    list-style: none;
+    padding: 5px;
+}
+.admin-mobile-menu ul li a {
+    color: #fff;
+    text-decoration:  none;
+    margin-bottom: 10px;
+}
+
+#admin-menuclose, #admin-userclose{
+    background: none;
+    border: none;
+    padding: 5px;
+    color: #fff;
+    font-size: 20px;
+    margin: 0;
+    border-radius: 10px;
+}
+
+#admin-menuclose:active, #admin-userclose:active{
+    background: red;
+}
+
+@media screen and (min-width: 900px){
+  #admin-soptions-desktop {
+    display: box;
+    width: 100%;
+  }
+
+  #admin-soptions-mobile {
+    display: none;
+  }
+
+  #admin-sform-desktop {
+    display: box;
+    font-size: 20px;
+    width: 100%;
+  }
+
+  #admin-sform-mobile {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 899px){
+  #admin-soptions-desktop {
+    display: none;
+  }
+
+  #admin-soptions-mobile {
+    display: box;
+    width: 100%;
+  }
+
+  #admin-sform-desktop {
+    display: none;
+  }
+
+  #admin-sform-mobile {
+    display: box;
+    font-size: 20px;
+    width: 100%;
+  }
+}
+
+.admin-soptions-menu ul, .admin-soptions-mmenu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.admin-soptions-menu ul {
+    margin-bottom: 15px;
+}
+
+.admin-soptions-menu {
+    width: 20%;
+    vertical-align: top;
+}
+
+.admin-soptions-area {
+    width: 80%;
+    vertical-align: top;
+}
+
+#admin-soptions-table {
+    width: 100%;
+}
+
+.admin-soptions-current{
+    color: #0094FF;
+    border: 2px #0094FF solid;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 10px;
+    transition: .25s color ease-in-out, .25s background ease-in-out;
+}
+
+.admin-soptions-current:hover{
+    color: #FFF;
+    background: #0094FF;
+}
+
+.admin-soptions-menu a{
+    color: #00137F;
+    border: 2px #00137F solid;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 10px;
+    transition: .25s color ease-in-out, .25s background ease-in-out;
+}
+
+.admin-soptions-menu a:hover{
+    color: #FFF;
+    background: #00137F;
+}
+
+@media screen and (min-width: 900px){
+#admin-message {
+    display: none;
+    position: fixed;
+    bottom: 50px;
+    left: 37%;
+    width: 25%;
+    background: #00137F;
+    color: #fff;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #000;
+}
+}
+
+@media screen and (max-width: 899px){
+  #admin-message {
+      display: none;
+      position: fixed;
+      bottom: 50px;
+      left: 5px;
+      width: calc(100% - 20px);
+      background: #00137F;
+      color: #fff;
+      padding: 5px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #000;
+  }
+}
+
+#admin-closemessage {
+    background: #FFF;
+    border: none;
+    color: #00137F;
+    padding: 5px;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    margin: 0;
+}
+
+.admin-sform-label {
+    width: 20%;
+    cursor: default;
+}
+
+.admin-sform-input {
+    width: 80%;
+}
+
+.admin-sform-full {
+    width: 100%;
+    font-size: 20px;
+}
+
+.admin-sform-text {
+    width: calc(100% - 10px);
+    padding: 5px;
+    font-family: 'Roboto';
+    border-radius: 10px;
+    border: 1.5px solid #000;
+}
+
+.admin-sform-textbox {
+    width: calc(100% - 10px);
+    padding: 5px;
+    font-family: 'Roboto';
+    border-radius: 10px;
+    border: 1.5px solid #000;
+    resize: none;
+    height: 100px;
+}
+
+.admin-sform-select{
+    width: 100%;
+    padding: 5px;
+    font-family: 'Roboto';
+    border-radius: 10px;
+    border: 1.5px solid #000;
+}
+
+.admin-sform-heading{
+    text-align: center;
+    width: 100%;
+    font-family: 'Days One';
+}
+
+.admin-sform-required{
+    color: red;
+}
+
+#admin-dash-toolset {
+    position: fixed;
+    bottom: 50px;
+    right: 12px;
+}
+
+.admin-dash-add{
+    margin: 0;
+    padding: 0;
+    color: #FFF;
+    display: box;
+    font-size: 20px;
+    width: 60px;
+    height: 60px;
+    background: #00137F;
+    border-radius: 50%;
+    border: none;
+    box-shadow: 0px 0px 10px #000;
+    transition: .25s background ease-in-out;
+
+}
+
+.admin-dash-add:hover{
+    background: #0094FF;
+}
+
+#admin-dash-content{
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    background: #FFF;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    box-shadow: 0px 0px 20px #000;
+}
+
+#admin-desktop .admin-head-left ul li ul {
+                display: none;
+            }
+
+            #admin-desktop .admin-head-left ul li:hover ul {
+                display: block;
+                position: absolute;
+                background: #00137F;
+                width: 200px;
+                border-radius: 0px 10px 10px 10px;
+                padding: 10px;
+                transition: background .25s ease-in-out;
+                clear: both;
+                top: 30px;
+                margin-left: -5px;
+            }
+
+            #admin-desktop .admin-head-left ul li:hover ul li a {
+                display: block;
+                width: 190px;
+                padding: 5px;
+                border-radius: 10px;
+                transition: background .25s ease-in-out;
+            }
+
+            #admin-desktop .admin-head-left ul li:hover ul li a:hover {
+                background: #0094FF;
+            }

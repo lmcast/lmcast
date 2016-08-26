@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url('../img/nav-bg.png') repeat;
+    color: #FFF;
+    font-family: 'Roboto';
+}
+
+#login-content {
+  display: none;
+}
+
+#login-container {
+    display: box;
+    width: 280px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    padding: 10px;
+    border: 2px #00137F solid;
+    margin-top: 10%;
+    background: #0094FF;
+    box-shadow: 0 0 10px #000;
+}
+
+#login-content {
+    margin-top: 10%;
+    width: 280px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (min-width:850px){
+#login-message {
+    display: none;
+    position: absolute;
+    left: 37%;
+    width: 25%;
+    padding: 10px;
+    border-radius: 10px;
+    top: 10px;
+    box-shadow: 0 0 10px #000;
+};
+}
+
+@media screen and (max-width:849px){
+#login-message {
+    display: none;
+    position: absolute;
+    left: 10px;
+    width: calc(100% - 40px);
+    padding: 10px;
+    border-radius: 10px;
+    bottom: 10px;
+    box-shadow: 0 0 10px #000;
+};
+}
+
+#login-message a{
+    color: #fff;
+    text-decoration: none;
+}
+
+#login-message a:hover{
+    text-decoration: underline;
+}
+
+.login-input {
+    font-size: 22px;
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: none;
+    font-family: 'Roboto';
+    width: calc(100% - 10px);
+}
+
+.login-button {
+    padding: 5px;
+    text-decoration: none;
+    color: #FFF;
+    border: 2px #00137F solid;
+    background: none;
+    margin-right: 5px;
+    border-radius: 0px 10px;
+    transition: background .25s ease-in-out, color .25s ease-in-out;
+    font-family: 'Roboto';
+    font-size: 18px;
+    cursor: pointer;
+    width: calc(50% - 10px);
+}
+
+.login-button2 {
+    padding: 5px;
+    text-decoration: none;
+    color: #FFF;
+    border: 2px #00137F solid;
+    background: none;
+    margin-right: 5px;
+    border-radius: 0px 10px;
+    transition: background .25s ease-in-out, color .25s ease-in-out;
+    font-family: 'Roboto';
+    font-size: 18px;
+    cursor: pointer;
+    width: calc(100% - 10px);
+}
+
+.login-button:hover {
+    background: #00137F;
+    color: #FFF;
+}
+
+#login-message-close {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: none;
+    background-color: #FFF;
+}

@@ -1,0 +1,105 @@
+body{
+  margin: 0;
+  padding: 0;
+  background: url('/content/themes/lmn-flex2/img/nav-bg.png') repeat;
+  color: #FFF;
+  font-family: 'Roboto', sans-serif;
+}
+
+.head-logo img{
+  width: 250px;
+}
+
+.head-social {
+  float: right;
+}
+
+.smedia-title {
+  font-family: 'Days One', sans-serif;
+  font-size: 20px;
+  padding: 5px
+}
+
+.smedia-links-desktop {
+  font-size: 40px;
+  background: #FFF;
+  padding: 5px;
+  border-radius: 10px 0px 0px 10px;
+}
+
+.smedia-links-desktop .fa {
+  opacity: 0.6;
+  transition: opacity .25s ease-in-out;
+  z-index: 0;
+}
+
+.smedia-links-desktop .fa:hover {
+  opacity: 1;
+}
+
+.fa-facebook-official {
+  color: #3b579d;
+  margin-top: -10px;
+}
+
+.fa-twitter {
+  color: #55acee;
+}
+
+.fa-youtube-play {
+  color: #cd201f;
+}
+
+.fa-instagram {
+  color: #000;
+}
+
+.fa-twitch {
+  color: #6441A5;
+}
+
+#site-head {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#smedia-area {
+  border-collapse: collapse;
+  background: #00137F;
+  border-radius: 10px;
+  display: block;
+}
+
+#site-menu {
+  background: #0094FF;
+  padding: 5px;
+  width: calc(100% - 10px);
+}
+
+#page-title {
+  font-family: 'Days One', sans-serif;
+  font-weight: normal;
+  margin-top: 0;
+}
+
+#page {
+  width: 100%;
+  max-width: 1500px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5px;
+}
+
+#page-contentarea {
+  background: #FFF;
+  color: #000;
+  padding: 5px;
+}
+
+#page-desktop-sidebar {
+  width: 200px;
+}
+
+#page-content {
+  width: calc(100% - 200px);
+}

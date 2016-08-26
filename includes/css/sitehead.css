@@ -1,0 +1,128 @@
+#userMenu {
+    width: 100%;
+    background: #0094FF;
+    font-size: 16px;
+    font-family: 'Roboto';
+    color: #FFF;
+    box-shadow: 0 0 20px #000;
+    margin-bottom: 10px;
+}
+
+.userMenuRight {
+    float: right;
+}
+
+.userMenuRight ul {
+    padding: 0;
+    margin: 0;
+}
+
+.userMenuRight li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.userMenuRight a {
+  color: #FFF;
+  text-decoration: none;
+}
+
+.userMenuLeft ul {
+  padding: 0;
+  margin: 0;
+}
+
+.userMenuLeft li {
+  list-style: none;
+}
+
+.userMenuLeft > ul > li {
+  margin: 0;
+  padding: 5px 10px 5px 10px;
+  border-radius: 10px;
+  float: left;
+  margin-left: 5px;
+  transition: .25s background ease-in-out;
+}
+
+.userMenuLeft a {
+  text-decoration: none;
+  color: #FFF;
+  padding: none;
+}
+
+.userMenuLeft li:hover{
+  background: #00137F;
+}
+
+.userMenuRight ul li ul{
+  display: none;
+}
+
+.userMenuRight ul li {
+  padding: 3px;
+  padding-left: 7px;
+  cursor: pointer;
+}
+
+.userMenuRight ul li:hover ul{
+  display: block;
+  position: absolute;
+  background: #00137F;
+  width: 238px;
+  padding: 10px;
+  transition: background .25s ease-in-out;
+  clear: both;
+  top: 37px;
+  right: 3px;
+  margin: 0;
+  list-style: none;
+  border-radius: 0px 0px 10px 10px;
+  z-index: 1;
+}
+
+.userMenuRight > ul > li:hover{
+  background: #00137F;
+}
+
+.userMenuRight > ul > li:hover > ul > li:hover{
+  background: #0094ff;
+}
+
+.userMenuRight > ul > li:hover > ul > li{
+  border-radius: 10px;
+  padding: 5px;
+  transition: background .25s ease-in-out;
+}
+
+.userMenuLeft ul li ul{
+  display: none;
+}
+
+.userMenuLeft ul li.dropdown{
+  border-radius: 10px 10px 0px 0px;
+}
+
+.userMenuLeft > ul > li.dropdown:hover > ul{
+  display: block;
+  position: absolute;
+  background: #00137F;
+  width: 200px;
+  border-radius: 0px 10px 10px 10px;
+  padding: 10px;
+  transition: background .25s ease-in-out;
+  clear: both;
+  top: 30px;
+  margin-left: -10px;
+}
+
+.userMenuLeft > ul > li.dropdown:hover > ul > li {
+  padding: 5px;
+  border-radius: 10px;
+  transition: background .25s ease-in-out;
+}
+
+.userMenuLeft > ul > li.dropdown:hover > ul > li:hover {
+  background: #0094FF;
+}
